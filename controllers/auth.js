@@ -65,7 +65,7 @@ exports.signup = (req, res) => {
       subject: `Account activation link`,
       html: `
           <h3>Please use the following link to activate your account</h3>
-          <p>${process.env.CLIENT_URL}/auth/activate/${token}</p>
+          <p>https://mernauth.alway.world/auth/activate/${token}</p>
           <hr>
           <p>This email may contain sensitive information</p>
           <p>${process.env.CLIENT_URL}</p>
@@ -195,7 +195,7 @@ exports.forgotPassword = (req, res) => {
       subject: `Password Reset link`,
       html: `
           <h3>Please use the following link to reset your password</h3>
-          <p>${process.env.CLIENT_URL}/auth/password/reset/${token}</p>
+          <p>https://mernauth.alway.world/auth/password/reset/${token}</p>
           <hr>
           <p>This email may contain sensitive information</p>
           <p>${process.env.CLIENT_URL}</p>
